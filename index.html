@@ -3,70 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rincón Agricultor | Tradición e Innovación</title>
+    <title>Rincón Agricultor | Tradición familiar en Antihuala</title>
+    <meta name="description" content="En Rincón Agricultor cultivamos la tierra de Antihuala con tradición. Ofrecemos hortalizas frescas, huevos de gallinas felices y miel de nuestras abejas.">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container-nav">
             <div class="logo-container">
                 <img src="img/logo.png" alt="Rincón Agricultor Logo" class="logo-img">
             </div>
-            <ul>
+            
+            <button class="menu-toggle" id="btn-menu" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#historia">Nuestra Historia</a></li>
-                <li><a href="#tecnologia">Tecnología Sutil</a></li>
-                <li><a href="#galeria">Cosecha 2025-2026</a></li>
-                <li><a href="https://wa.me/56948547685" class="btn-ws" target="_blank">WhatsApp</a></li>
+                <li><a href="#hacemos">Lo Que Hacemos</a></li>
+                <li><a href="#galeria">Galería 2025-2026</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="https://wa.me/56948547685" class="btn-ws" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Tradición con innovación</h1>
-            <p>Cultivamos con el respeto de antes y la eficiencia de hoy en las tierras de Antihuala.</p>
-            <a href="#historia" class="btn-primario">Conocer nuestra labor</a>
-        </div>
-    </section>
-
-    <section id="historia">
-        <div class="container">
-            <h2>Nuestra Historia</h2>
-            <p><strong>Rincón Agricultor</strong> nace el 2024 de la unión de dos mundos: la persistencia de mis padres y la pasión por la tecnología aplicada al campo.</p>
-            <p>Aquí, cultivamos con el corazón y supervisamos con precisión digital para asegurar el sabor auténtico de nuestro campo.</p>
-        </div>
-    </section>
-
-    <section id="tecnologia">
-        <div class="container">
-            <h2>Tecnología Sutil</h2>
-            <p>Optimizamos el uso del agua y monitoreamos temperatura, humedad y enfermedades de nuestros cultivos mediante sensores de precisión, asegurando una producción sostenible.</p>
-        </div>
-    </section>
-
-    <section id="galeria">
-        <div class="container">
-            <h2>Cosecha 2025-2026</h2>
-            <p>Registros visuales de nuestra labor, nuestros vecinos y la abundancia de nuestras tierras en Antihuala.</p>
-            <div class="grid-fotos">
-                <img src="img/cosecha1.jpg" alt="Cosecha 1">
-                <img src="img/cosecha2.jpg" alt="Cosecha 2">
-                <img src="img/cosecha3.jpg" alt="Cosecha 3">
-                <img src="img/cosecha4.jpg" alt="Cosecha 4">
-                <img src="img/cosecha5.jpg" alt="Cosecha 5">
-                <img src="img/cosecha6.jpg" alt="Cosecha 6">
-                <img src="img/cosecha7.jpg" alt="Cosecha 7">
-                <img src="img/cosecha8.jpg" alt="Cosecha 8">
-                <img src="img/cosecha9.jpg" alt="Cosecha 9">
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Tradición familiar</h1>
+                <p>Trabajamos la tierra de Antihuala con el respeto de siempre, cultivando vida y generando experiencias.</p>
+                <a href="#galeria" class="btn-primario">Nuestra Galería</a>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="historia">
+            <div class="container">
+                <h2>Nuestra Historia</h2>
+                <p><strong>Rincón Agricultor</strong> nace el 2024 como un sentido homenaje a la persistencia de mis padres y su inmenso amor por la tierra.</p>
+                <p>Somos un proyecto familiar que busca mantener vivas las tradiciones del campo en la Provincia de Arauco, siempre respetando la vida y los tiempos del campo.</p>
+            </div>
+        </section>
+
+        <section id="hacemos" class="seccion-clara">
+            <div class="container">
+                <h2>Lo Que Hacemos</h2>
+                <p>Nuestras tierras son un ecosistema vivo cuidado con mucha dedicación. Aqui actualmente nos enfocamos en tres proyectos agrícolas:</p>
+                
+                <div class="servicios-grid">
+                    <div class="servicio-card">
+                        <h3>🌱 Cultivos</h3>
+                        <!-- Cultivos separados en lista para mejor lectura -->
+                        <ul class="lista-cultivos">
+                            <li><strong>Sandías Santa Amelia:</strong> Variedad conocida por su rojo intenso y su alto dulzor.</li>
+                            <li><strong>Frutillas Albión:</strong> Variedad conocida por su gran tamaño y dulzor.</li>
+                            <li><strong>Tradicionales:</strong> Arvejas, papas y tomates.</li>
+                        </ul>
+                        <p class="nota-eco">Todos los cultivos son sembrados buscando generar el menor impacto al medioambiente, utilizando mulch, cintas de riego, abonos orgánicos e insecticidas naturales.</p>
+                    </div>
+                    <div class="servicio-card">
+                        <h3>🥚 Gallinas</h3>
+                        <p>Huevos frescos de nuestras gallinas ponedoras, criadas con cariño, espacio y bienestar, respetando su ciclo natural.</p>
+                    </div>
+                    <div class="servicio-card">
+                        <h3>🐝 Abejas</h3>
+                        <p>Miel extraída de nuestras colmenas, las cuales son promotoras de la vida en nuestro campo, polinizando cada uno de nuestros cultivos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="container">
+                <h2>Galería 2025-2026</h2>
+                <p>Registros visuales de nuestro trabajo, nuestros vecinos y la abundancia de nuestras tierras en Antihuala.</p>
+                <div class="grid-fotos">
+                    <img src="img/cosecha1.jpg" alt="Cosecha 1" loading="lazy">
+                    <img src="img/cosecha2.jpg" alt="Cosecha 2" loading="lazy">
+                    <img src="img/cosecha11.jpeg" alt="Cosecha 3" loading="lazy">
+                    <img src="img/cosecha4.jpg" alt="Cosecha 4" loading="lazy">
+                    <img src="img/cosecha5.jpg" alt="Cosecha 5" loading="lazy">
+                    <img src="img/cosecha6.jpg" alt="Cosecha 6" loading="lazy">
+                    <img src="img/cosecha7.jpg" alt="Cosecha 7" loading="lazy">
+                    <img src="img/cosecha8.jpg" alt="Cosecha 8" loading="lazy">
+                    <img src="img/cosecha9.jpg" alt="Cosecha 9" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-clara">
+            <div class="container">
+                <h2>Conecta con Nosotros</h2>
+                <p>Escríbenos, síguenos en nuestras redes y si quieres ver nuestro trabajo de cerca, visítanos.</p>
+                <div class="contacto-info">
+                    <p>📍 <strong>Ubicación:</strong> <a href="https://www.google.com/maps/dir//Rinc%C3%B3n+agricultor+-+8H4P%2B53Q,+Los+%C3%81lamos,+Los+Alamos,+B%C3%ADo+B%C3%ADo/@-33.3613261,-70.7287413,2591m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x966a09ef44d12d67:0xf5481d80adb8b74d!2m2!1d-73.4148209!2d-37.6944246?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="link-texto">Antihuala, Los Álamos, Bío Bío (Ver en Maps)</a></p>
+                    <p>✉️ <strong>Correo:</strong> <a href="mailto:contacto@rinconagricultor.cl" class="link-texto">contacto@rinconagricultor.cl</a></p>
+                    <!-- Instagram con el mismo formato -->
+                    <p>📷 <strong>Instagram:</strong> <a href="https://www.instagram.com/rinconagricultor" target="_blank" class="link-texto">@rinconagricultor</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 Rincón Agricultor - Antihuala, Región del Bío Bío, Chile.</p>
-            <p>Tradición familiar e innovación técnica.</p>
+            <p>Cultivando con respeto y tradición familiar.</p>
         </div>
     </footer>
+
+    <!-- SCRIPT PARA EL MENÚ MÓVIL -->
+    <script>
+        const btnMenu = document.getElementById('btn-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        btnMenu.addEventListener('click', () => {
+            btnMenu.classList.toggle('open');
+            navLinks.classList.toggle('activo');
+        });
+    </script>
 </body>
 </html>
